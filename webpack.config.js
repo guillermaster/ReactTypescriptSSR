@@ -33,7 +33,8 @@ var client = Object.assign({}, config, {
 var server = Object.assign({}, config, {
     name: "server",
     target: "node",
-    externals: [nodeExternals()],
+    externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
+    externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
     entry: path.resolve(__dirname, "src/server/index.tsx"),
     output: {
         filename: "server.js",

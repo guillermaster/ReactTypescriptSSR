@@ -30,4 +30,4 @@ $> npm run start
 
 # Usage
 
-Access the app at `localhost:8080`
+Access the app at `localhost:3100`

@@ -19,7 +19,7 @@ declare const module: any;
 
 function main() {
     const express = Express();
-    const port = 8080;
+    const port = 3100;
 
     express.use(Express.static("build"));
 
